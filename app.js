@@ -5,7 +5,7 @@ function agregarAmigo() {
     const nombre = input.value.trim(); 
 
     if (nombre === "") {
-        alert("Por favor, ingrese un nombre válido.");
+        alert("El campo esta vacio, ingrese un nombre válido.");
         return;
     }
 
@@ -22,7 +22,6 @@ function actualizarLista() {
     amigos.forEach((amigo, index) => {
         const li = document.createElement("li");
         li.textContent = amigo;
-
         const btnEliminar = document.createElement("button");
         btnEliminar.textContent = "❌";
         btnEliminar.classList.add("delete-button");
@@ -40,7 +39,7 @@ function eliminarAmigo(index) {
 
 function sortearAmigo() {
     if (amigos.length === 0) {
-        alert("La lista está vacía. Agregue nombres antes de sortear.");
+        alert("La lista está vacía. Agregue amigos para poder sortear.");
         return;
     }
 
