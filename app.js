@@ -1,4 +1,3 @@
-
 let amigos = [];
 
 function agregarAmigo() {
@@ -34,3 +33,20 @@ function actualizarLista() {
     });
 }
 
+function eliminarAmigo(index) {
+    amigos.splice(index, 1); 
+    actualizarLista();
+}
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("La lista está vacía. Agregue nombres antes de sortear.");
+        return;
+    }
+
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    const amigoSeleccionado = amigos[indiceAleatorio];
+
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = `<li>🎉 El amigo secreto es: <strong>${amigoSeleccionado}</strong> 🎉</li>`;
+}

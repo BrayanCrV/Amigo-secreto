@@ -160,3 +160,7 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+.delete-button{
+    margin-left: 10px;
+    font-size: 10px;
+}
