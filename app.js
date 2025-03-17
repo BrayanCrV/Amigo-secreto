@@ -21,12 +21,14 @@ function actualizarLista() {
 
     amigos.forEach((amigo, index) => {
         const li = document.createElement("li");
-        li.textContent = amigo;
+        const nombreSpan = document.createElement("span");
+        nombreSpan.textContent = amigo;
+        nombreSpan.classList.add("name-amigo");
         const btnEliminar = document.createElement("button");
         btnEliminar.textContent = "❌";
         btnEliminar.classList.add("delete-button");
         btnEliminar.onclick = () => eliminarAmigo(index);
-
+        li.appendChild(nombreSpan)
         li.appendChild(btnEliminar);
         lista.appendChild(li);
     });

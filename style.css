@@ -131,7 +131,6 @@ ul {
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    margin: 20px 0;
 }
 
 .result-list {
@@ -163,4 +162,11 @@ ul {
 .delete-button{
     margin-left: 10px;
     font-size: 10px;
+}
+.name-amigo{
+    font-size: 20px;
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin: 20px 0;
 }
